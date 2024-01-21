@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEvent Listener</title>
+
+    <Style>
+
+        /* This is background design */
+        body {
+            background-color: antiquewhite;
+        }
+
+        /* This is for the fonts of the header */
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+        
+        /* Designs for the button*/
+
+        button {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            font-size: 2em;
+            margin: 100px;
+            margin-top: 0px;
+            border-radius: 20%;
+            box-shadow: 1cm;
+            background: linear-gradient(to right, rgb(144, 14, 191), rgb(232, 26, 218))
+        }
+        .container {
+            position: absolute;
+            margin: 20px;
+            height: max-content;
+            width: max-content;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Activity JavaScript AddEvent Listener</h1>
+    <h2>Alert Button Click Tester</h2>
+    <h3>Why don't you try and click the buttons to see if it's working?</h3>
+    <div class="container">
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+    </div>
+
+    <script>
+        document.getElementById('btn1').addEventListener("click", myfunction1);
+        document.getElementById('btn2').addEventListener("click", myfunction2);
+        document.getElementById('btn3').addEventListener("click", myfunction3);
+
+        function myfunction1() {
+            alert("Button 1 was clicked!")
+        }
+
+        function myfunction2(){
+            alert("Button 2 was clicked!")
+        }
+
+        function myfunction3(){
+            alert("Button 3 was clicked!")
+        }
+    </script>
+</body>
+</html>
